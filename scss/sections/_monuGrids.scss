@@ -1,0 +1,18 @@
+.monu-container
+    {  display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+          "Header Header Header"
+          "Section7 Section7 Section7"
+          "Section8 Section8 Section8"
+          "Footer Footer Footer";
+      }
+      
+      .header { grid-area: Header; }
+      
+      .section7 { grid-area: Section7; }
+      
+      .section8 { grid-area: Section8; }
+      
+      .footer { grid-area: Footer; }

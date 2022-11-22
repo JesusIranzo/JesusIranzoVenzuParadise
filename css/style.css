@@ -1,0 +1,642 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Urbanist:wght@100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.header {
+  background-color: #07257D;
+  color: #FFFFFF;
+  font-family: "Cinzel"; }
+
+.header__ul li a {
+  margin-bottom: 5px;
+  color: #FFFFFF;
+  border: 2px solid #CF142B;
+  border-radius: 5vw; }
+
+.footer {
+  background-color: #07257D;
+  color: #CF142B;
+  font-family: "Urbanist"; }
+  .footer a {
+    text-decoration: none;
+    color: #CF142B; }
+
+.section1 h1 {
+  background-color: #FFFFFF;
+  color: #CF142B;
+  font-family: "Cinzel";
+  padding: 20px; }
+
+.section1__parrafos {
+  background-color: #FFFFFF;
+  color: #CF142B;
+  text-align: center;
+  padding: 30px; }
+
+.section2__tequeños h4, .section3__comida h1, .section3__comida__asado h5, .section3__comida__tequeños h5 {
+  color: #FFCF00;
+  font-family: "Cinzel"; }
+
+.section2__tequeños p, .section3__comida p {
+  color: #FFCF00;
+  text-align: center;
+  font-family: "Urbanist"; }
+
+.header img {
+  width: 50vw; }
+
+.header__ul li {
+  text-align: center; }
+
+.acordeon {
+  background-color: #CF142B;
+  color: #FFFFFF; }
+
+@media (min-width: 1024px) {
+  .header {
+    display: flex;
+    justify-content: center; }
+    .header img {
+      width: 20vw; }
+    .header li {
+      margin-left: 30px; } }
+
+.index-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "Header Header Header" "Section1 Section1 Section1" "Section2 Section2 Section2" "Footer Footer Footer"; }
+
+.header {
+  grid-area: Header; }
+
+.section1 {
+  grid-area: Section1; }
+
+.section2 {
+  grid-area: Section2; }
+
+.footer {
+  grid-area: Footer; }
+
+.section1 {
+  margin-top: 50px; }
+  .section1 p {
+    text-align: center; }
+  .section1 h1 {
+    text-align: center; }
+  .section1__img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFCF00; }
+    .section1__img__bqto {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    .section1__img__Ang {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    .section1__img img {
+      width: 100vw;
+      height: 50vh; }
+    .section1__img h3 {
+      color: #CF142B;
+      font-family: "Urbanist";
+      font-weight: 900;
+      margin: 10px; }
+    .section1__img a {
+      padding: 5px;
+      border-radius: 5vh;
+      text-decoration: none;
+      color: #FFCF00;
+      background-image: linear-gradient(150deg, #CF142B, #07257D);
+      background-size: 400% 300%;
+      animation: botonBarquisimeto 5s ease infinite; }
+
+@keyframes botonBarquisimeto {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+  .section1__div h4 {
+    color: #07257D;
+    font-family: "Cinzel";
+    font-weight: 900;
+    text-align: center;
+    margin: 10px; }
+  .section1__div p {
+    color: #CF142B;
+    font-family: "Urbanist";
+    font-size: 1.2rem;
+    font-weight: 900;
+    text-align: center;
+    padding: 30px; }
+
+@media (min-width: 768px) {
+  .section1__img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
+    .section1__img img {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      width: 300px;
+      height: 300px;
+      border: 5px solid #07257D; }
+    .section1__img h3 {
+      margin-bottom: 20px; } }
+
+.section2 {
+  background-color: #CF142B; }
+  .section2__tequeños {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .section2__tequeños h4 {
+      font-weight: 900;
+      margin-top: 20px;
+      margin-bottom: 20px; }
+    .section2__tequeños p {
+      font-weight: 900; }
+    .section2__tequeños img {
+      width: 100vw;
+      height: 40vh; }
+    .section2__tequeños a {
+      padding: 5px;
+      border-radius: 5vh;
+      text-decoration: none;
+      color: #FFCF00;
+      background-image: linear-gradient(150deg, #CF142B, #07257D);
+      background-size: 400% 300%;
+      animation: botonBarquisimeto 5s ease infinite; }
+
+@media (min-width: 768px) {
+  .section2__tequeños img {
+    width: 300px;
+    height: 300px; } }
+
+.comida-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "Header Header Header" "Section3 Section3 Section3" "Section4 Section4 Section4" "Footer Footer Footer"; }
+
+.header {
+  grid-area: Header; }
+
+.section3 {
+  grid-area: Section3; }
+
+.section4 {
+  grid-area: Section4; }
+
+.footer {
+  grid-area: Footer; }
+
+.section3__comida {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #CF142B; }
+  .section3__comida h1 {
+    margin-top: 20px; }
+  .section3__comida p {
+    font-weight: 900;
+    padding: 10px; }
+  .section3__comida h4 {
+    padding: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: "Urbanist";
+    font-weight: 900; }
+  .section3__comida__hallaca {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFCF00; }
+    .section3__comida__hallaca h5 {
+      color: #07257D;
+      font-family: "Cinzel";
+      font-weight: 900;
+      margin-top: 20px;
+      margin-bottom: 20px; }
+    .section3__comida__hallaca img {
+      width: 100vw;
+      height: 30vh; }
+    .section3__comida__hallaca p {
+      color: #CF142B;
+      text-align: center;
+      font-family: "Urbanist";
+      padding: 30px;
+      font-weight: 900; }
+  .section3__comida__asado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #CF142B; }
+    .section3__comida__asado img {
+      width: 100vw;
+      height: 30vh; }
+    .section3__comida__asado h5 {
+      margin-top: 20px;
+      margin-bottom: 20px; }
+    .section3__comida__asado p {
+      color: #FFFFFF;
+      text-align: center;
+      font-family: "Urbanist";
+      padding: 30px;
+      font-weight: 900; }
+  .section3__comida__tequeños {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #CF142B; }
+    .section3__comida__tequeños img {
+      width: 100vw;
+      height: 30vh; }
+    .section3__comida__tequeños h5 {
+      margin-top: 20px;
+      margin-bottom: 20px; }
+    .section3__comida__tequeños p {
+      color: #FFFFFF;
+      text-align: center;
+      font-family: "Urbanist";
+      padding: 30px;
+      font-weight: 900; }
+
+@media (min-width: 768px) {
+  .section3__comida {
+    display: flex; }
+  .section3 img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 50vw;
+    height: 50vh;
+    border: 5px solid #07257D; }
+  .section3 h3 {
+    margin-bottom: 20px; } }
+
+.section4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .section4 h5 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #07257D;
+    font-family: "Cinzel";
+    font-weight: 900; }
+  .section4__alfajores {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .section4__alfajores img {
+      width: 100vw;
+      height: 30vh; }
+    .section4__alfajores p {
+      padding: 30px;
+      color: #CF142B;
+      text-align: center;
+      font-family: "Urbanist";
+      font-weight: 1000; }
+  .section4__guayaba {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFCF00; }
+    .section4__guayaba img {
+      width: 100vw;
+      height: 30vh; }
+    .section4__guayaba p {
+      padding: 30px;
+      color: #CF142B;
+      text-align: center;
+      font-family: "Urbanist";
+      font-weight: 1000; }
+  .section4__churros {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .section4__churros img {
+      width: 100vw;
+      height: 30vh; }
+    .section4__churros p {
+      padding: 30px;
+      color: #CF142B;
+      text-align: center;
+      font-family: "Urbanist";
+      font-weight: 1000; }
+
+@media (min-width: 768px) {
+  .section4 img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 300px;
+    border: 5px solid #07257D; }
+  .section4 h3 {
+    margin-bottom: 20px; } }
+
+.lugar-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "Header Header Header" "Section5 Section5 Section5" "Section6 Section6 Section6" "Footer Footer Footer"; }
+
+.header {
+  grid-area: Header; }
+
+.section5 {
+  grid-area: Section5; }
+
+.section6 {
+  grid-area: Section6; }
+
+.footer {
+  grid-area: Footer; }
+
+.section5 {
+  background-image: linear-gradient(150deg, #CF142B, #FFCF00);
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .section5 h1 {
+    text-align: center;
+    font-family: "Cinzel";
+    color: #FFCF00;
+    margin: 20px; }
+  .section5 p {
+    color: #FFFFFF;
+    font-family: "Urbanist";
+    font-weight: 900;
+    text-align: center;
+    padding: 20px; }
+  .section5 h5 {
+    text-align: center;
+    font-family: "Cinzel";
+    color: #07257D;
+    margin: 20px; }
+  .section5__lugares__caracas {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .section5__lugares__caracas img {
+      width: 100vw;
+      height: 40vh; }
+  .section5__lugares__barquisimeto {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .section5__lugares__barquisimeto img {
+      width: 100vw;
+      height: 40vh; }
+
+@media (min-width: 768px) {
+  .section5__lugares {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .section5__lugares img {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      width: 40vw;
+      height: 40vh;
+      border: 5px solid #07257D; } }
+
+.section6 {
+  background-image: linear-gradient(to top, #07257D, #FFCF00);
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .section6 p {
+    color: #FFFFFF;
+    font-family: "Urbanist";
+    font-weight: 900;
+    text-align: center;
+    padding: 20px; }
+  .section6 h5 {
+    text-align: center;
+    font-family: "Cinzel";
+    color: #CF142B;
+    margin: 20px; }
+  .section6__lugares2__bolivar {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .section6__lugares2__bolivar img {
+      width: 100vw;
+      height: 40vh; }
+  .section6__lugares2__falcon {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .section6__lugares2__falcon img {
+      width: 100vw;
+      height: 40vh; }
+
+@media (min-width: 768px) {
+  .section6__lugares2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .section6__lugares2 img {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      width: 40vw;
+      height: 40vh;
+      border: 5px solid #07257D; } }
+
+.monu-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "Header Header Header" "Section7 Section7 Section7" "Section8 Section8 Section8" "Footer Footer Footer"; }
+
+.header {
+  grid-area: Header; }
+
+.section7 {
+  grid-area: Section7; }
+
+.section8 {
+  grid-area: Section8; }
+
+.footer {
+  grid-area: Footer; }
+
+.section7 {
+  background-color: #FFCF00;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .section7 h1 {
+    margin-top: 30px;
+    font-family: "Cinzel";
+    color: #CF142B;
+    font-weight: 900; }
+  .section7 h4 {
+    padding: 20px;
+    text-align: center;
+    font-family: "Urbanist";
+    color: #07257D;
+    font-weight: 900; }
+  .section7 h5 {
+    font-family: "Cinzel";
+    color: #CF142B;
+    font-weight: 900;
+    margin-bottom: 20px; }
+  .section7__fisics {
+    text-align: center; }
+    .section7__fisics img {
+      width: 90vw;
+      height: 40vh; }
+    .section7__fisics h5 {
+      margin-top: 20px;
+      margin-bottom: 20px; }
+    .section7__fisics p {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 40px;
+      font-family: "Urbanist";
+      font-weight: 900;
+      color: #07257D; }
+
+@media (min-width: 768px) {
+  .section7__fisics img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 60vw;
+    height: 60vh;
+    border: 5px solid #07257D; } }
+
+.section8 {
+  background-color: #CF142B;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .section8 h5 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: "Cinzel";
+    color: #FFCF00;
+    font-weight: 900; }
+  .section8__natural {
+    text-align: center; }
+    .section8__natural img {
+      width: 90vw;
+      height: 40vh; }
+    .section8__natural h5 {
+      margin-top: 20px;
+      margin-bottom: 20px; }
+    .section8__natural p {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 40px;
+      font-family: "Urbanist";
+      font-weight: 900;
+      color: #FFFFFF; }
+
+@media (min-width: 768px) {
+  .section8__natural img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 60vw;
+    height: 60vh;
+    border: 5px solid #07257D; } }
+
+.historia-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "Header Header Header" "Section3 Section3 Section3" "Section4 Section4 Section4" "Footer Footer Footer"; }
+
+.header {
+  grid-area: Header; }
+
+.section9 {
+  grid-area: Section3; }
+
+.section10 {
+  grid-area: Section4; }
+
+.footer {
+  grid-area: Footer; }
+
+.section9 {
+  background-color: #FFCF00;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .section9 h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "Cinzel";
+    color: #CF142B; }
+  .section9 img {
+    width: 100vw;
+    height: 50vh; }
+  .section9__paragraph {
+    padding: 30px;
+    font-weight: 900;
+    text-align: center;
+    background-color: #CF142B;
+    color: #FFFFFF;
+    font-family: "Urbanist"; }
+
+@media (min-width: 768px) {
+  .section9 {
+    background-color: #FFCF00; }
+    .section9 img {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      width: 600px;
+      height: 600px;
+      border: 5px solid #07257D; } }
+
+.section10 {
+  background-color: #CF142B;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .section10 img {
+    width: 80vw;
+    height: 50vh; }
+  .section10 h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "Cinzel";
+    color: #FFCF00; }
+  .section10 p {
+    padding: 20px;
+    text-align: center;
+    font-family: "Urbanist";
+    color: #FFFFFF;
+    font-weight: 900; }
+  .section10 h3 {
+    padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "Cinzel";
+    color: #FFCF00; }
+  .section10 iframe {
+    width: 90vw;
+    height: 50vh; }
+
+@media (min-width: 768px) {
+  .section10 img {
+    width: 500px;
+    height: 500px; }
+  .section10 iframe {
+    width: 80vw;
+    height: 80vh; } }

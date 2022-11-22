@@ -1,0 +1,18 @@
+.lugar-container
+    {  display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+          "Header Header Header"
+          "Section5 Section5 Section5"
+          "Section6 Section6 Section6"
+          "Footer Footer Footer";
+      }
+      
+      .header { grid-area: Header; }
+      
+      .section5 { grid-area: Section5; }
+      
+      .section6 { grid-area: Section6; }
+      
+      .footer { grid-area: Footer; }

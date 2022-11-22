@@ -1,0 +1,56 @@
+ .section6{
+    background-image: linear-gradient(to top, $blue, $yellow);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p{
+            color: $white;
+            font-family: $paragraph;
+            font-weight: 900;
+            text-align: center;
+            padding: 20px;
+        }
+        h5{
+            text-align: center;
+            font-family: $title;
+            color: $red;
+            margin: 20px;
+        }
+        &__lugares2{
+            &__bolivar{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img{
+                    width:100vw;
+                    height:40vh;
+                }
+            }
+            &__falcon{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img{
+                    width:100vw ;
+                    height: 40vh;
+                }
+            }
+        }
+    }
+    @media(min-width:768px){
+        .section6{
+            &__lugares2{
+                display: flex;
+                flex-direction: row;
+                justify-content:center;
+                img{
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    width: 40vw;
+                    height: 40vh;
+                    border: 5px solid $blue;
+                }
+            }
+        }
+    }
+ 

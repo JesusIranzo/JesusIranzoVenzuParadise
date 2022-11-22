@@ -1,0 +1,46 @@
+.section8{
+    background-color: $red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h5{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-family: $title;
+        color:$yellow;
+        font-weight: 900;
+    }
+    &__natural{
+        text-align: center;
+        img{
+            width:90vw;
+            height:40vh;
+        }
+        h5{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        p{
+            padding-left:20px;
+            padding-right: 20px;
+            padding-bottom: 40px;
+            font-family: $paragraph;
+            font-weight: 900;
+            color: $white;
+        }
+    }
+}
+
+@media(min-width:768px){
+    .section8{
+        &__natural{
+            img{
+                margin-top: 20px;
+                margin-bottom: 20px;
+                width: 60vw;
+                height: 60vh;
+                border: 5px solid $blue;
+            }
+        }
+    }
+}

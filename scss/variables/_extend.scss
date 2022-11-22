@@ -1,0 +1,47 @@
+%navBar{
+    background-color: $blue;
+    color: $white;
+    font-family: $title;
+}
+
+%list{
+    margin-bottom: 5px;
+    color: $white;            
+    border: 2px solid $red;
+    border-radius: 5vw;
+}
+
+%footer{
+    background-color: $blue;
+    color:$red;
+    font-family: $paragraph;
+    a{
+        text-decoration: none;
+        color: $red;
+    }
+}
+
+%indexOneTitle{
+    background-color: $white;
+    color: $red;
+    font-family: $title;
+    padding: 20px;
+}
+
+%indexOneParagraph{
+    background-color: $white;
+    color: $red;
+    text-align: center;
+    padding: 30px;
+}
+
+%indexTwoTitle{
+    color: $yellow;
+    font-family: $title;
+}
+
+%indexTwoParagraph{
+    color: $yellow;
+    text-align: center;
+    font-family: $paragraph;
+}

@@ -1,0 +1,18 @@
+.comida-container
+    {  display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+          "Header Header Header"
+          "Section3 Section3 Section3"
+          "Section4 Section4 Section4"
+          "Footer Footer Footer";
+      }
+      
+      .header { grid-area: Header; }
+      
+      .section3 { grid-area: Section3; }
+      
+      .section4 { grid-area: Section4; }
+      
+      .footer { grid-area: Footer; }

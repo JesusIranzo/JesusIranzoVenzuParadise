@@ -1,0 +1,42 @@
+.section2{
+    background-color: $red;
+    &__tequeños{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        h4{
+            @extend%indexTwoTitle;
+            font-weight: 900;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        p{
+            @extend%indexTwoParagraph;
+            font-weight: 900;
+        }
+         img{
+            width: 100vw;
+            height: 40vh;
+        }
+        a{
+            padding: 5px;
+            border-radius: 5vh;
+            text-decoration: none;
+            color: $yellow;
+            background-image: linear-gradient(150deg, $red, $blue);
+            background-size: 400% 300%;
+            animation: botonBarquisimeto 5s ease infinite;
+        }
+    }
+}
+
+@media(min-width:768px){
+    .section2{
+        &__tequeños{
+            img{
+                width: 300px;
+                height:300px;
+            }
+        }
+    }
+}

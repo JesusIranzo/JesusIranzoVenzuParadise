@@ -1,0 +1,30 @@
+.header{
+    @extend%navBar;
+    img{
+        width: 50vw;
+    }        
+    &__ul{
+        li{
+            text-align: center;
+            a{
+                @extend%list
+            }
+        }
+    }
+}
+.acordeon{
+    background-color: $red;
+    color: $white;
+}
+@media(min-width:1024px){
+    .header{
+        display: flex;
+        justify-content: center;
+        img{
+            width: 20vw;
+        }
+        li{
+            margin-left: 30px;
+        }
+    }
+}
